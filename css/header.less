@@ -1,0 +1,56 @@
+header{
+    .top{
+        background: @color-1;
+        color: @color-light-gray;
+        font-size: 12px;
+        padding: 8px 0 7px;
+        a{
+            color: @color-light-gray; text-decoration: none; font-weight: 200;
+            &.active, &:hover{color: #fff;}
+        }
+        .mail-ico{
+            font-size: 16px;
+            vertical-align: middle;
+            display: inline-block;
+            margin-top: -3px;
+        }
+        .login-block{
+            white-space: nowrap;
+            a{display: inline-block; margin-left: 4px; }
+            a:first-child{
+                margin-left: 0;
+                background: url("../img/key-ico.png")no-repeat 0 center;
+                padding-left: 18px;
+                margin-right: 4px;
+            }
+        }
+    }
+    .menu{
+        padding: 20px 0 22px;
+        background: @color-1;
+    }
+    @media (max-width: @screen-xs-max) {
+        .menu{
+            padding: 0;
+            .navbar-toggle{margin-top: 20px;}
+            .navbar-collapse{
+                position: absolute;
+                width: 100%;
+                z-index: 100;
+                background: rgb(255, 255, 255);
+                border-top: none;
+            }
+        }
+    }
+}
+.logo{
+    font-family: @fontPtSerif;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+    height: auto;
+    color: #fff!important;
+}
